@@ -5,27 +5,29 @@ int main()
 {
     int i = 0,j = 0,x = 0;
 
-    printf("\n\n enter a value for row & column => ");
+    printf("\n enter row & column size => ");
     scanf("%d",&x);
 
-    printf("\n we are doing pattern printing =>\n\n");
+    printf("\n \n we are doing pattern printing =>\n\n ");
 
     for(i = 1;i <= x;i++)
     {
         for(j = 1;j <= x;j++)
         {
-            if(i + j <= x + 1)
+            if(i <= j)
             {
-                printf(" * ");
+               printf(" $ ");
             }
             else
             {
                 printf("   ");
             }
+
         }
         printf("\n");
     }
-    printf("\n thanks for using my program.");
+    printf("thanks for using my program");
     getch();
     return 0;
 }
+
